@@ -21,7 +21,7 @@ p.forEach(function(player){
       const divImgCom = document.getElementById('com')
       const divHasil = document.querySelector('.hasil')
 
-      divImgCom.setAttribute('src', 'img/'+ imgCom + '.jpeg')
+      divImgCom.setAttribute('src', imgCom + '.jpeg')
       divHasil.innerHTML = hasil
       addEmot(hasil)
     } , 1000)
@@ -50,7 +50,7 @@ function pikir(){
       return
     }
     if(i == gambar.length) i = 0
-    imgCom.setAttribute('src' , 'img/'+ gambar[i++] +'.jpeg')
+    imgCom.setAttribute('src' , gambar[i++] +'.jpeg')
     const emot = document.querySelector('.emot')
     emot.innerHTML = '🤔'
     return
